@@ -1,67 +1,56 @@
 
- lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Sovereign Capital Supply</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
-font-family:Segoe UI, Arial, sans-serif;
-background:#0d0d0d;
-color:#ffffff;
-line-height:1.7;
+font-family:Arial, sans-serif;
+background:#0f0f0f;
+color:white;
+line-height:1.6;
 }
 
 header{
-position:fixed;
-width:100%;
+background:#000;
+padding:20px;
+position:sticky;
 top:0;
 z-index:1000;
-background:rgba(0,0,0,.92);
-backdrop-filter:blur(10px);
-border-bottom:1px solid #222;
 }
 
 nav{
-max-width:1400px;
-margin:auto;
-padding:20px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+max-width:1200px;
+margin:auto;
 }
 
 .logo-text{
-font-size:20px;
-font-weight:700;
-letter-spacing:2px;
-color:#d4af37;
+font-size:22px;
+font-weight:bold;
+color:#D4AF37;
 }
 
 nav ul{
 display:flex;
 list-style:none;
-gap:30px;
+gap:20px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-font-size:14px;
-font-weight:600;
 }
 
 .hero{
@@ -70,182 +59,90 @@ display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:120px 20px 80px;
-background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85));
+padding:40px;
+background:#111;
 }
 
 .hero-content{
-max-width:1000px;
+max-width:900px;
 }
 
 .hero-logo{
 width:220px;
-margin-bottom:30px;
+margin-bottom:25px;
 }
 
 .hero h1{
-font-size:65px;
-line-height:1.1;
+font-size:60px;
+color:#D4AF37;
 margin-bottom:20px;
-font-weight:800;
-}
-
-.gold{
-color:#d4af37;
 }
 
 .hero h2{
 font-size:24px;
-font-weight:300;
-color:#bbbbbb;
-margin-bottom:30px;
+margin-bottom:20px;
 }
 
 .hero p{
 font-size:18px;
-max-width:800px;
-margin:auto;
-color:#dddddd;
-}
-
-.buttons{
-margin-top:40px;
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
+color:#ddd;
 }
 
 .btn{
-padding:14px 30px;
-text-decoration:none;
-border-radius:6px;
-font-weight:700;
-}
-
-.btn-primary{
-background:#d4af37;
+display:inline-block;
+margin:15px;
+padding:15px 30px;
+background:#D4AF37;
 color:black;
-}
-
-.btn-secondary{
-border:1px solid #d4af37;
-color:#d4af37;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
 }
 
 section{
-padding:100px 8%;
-}
-
-.container{
-max-width:1400px;
-margin:auto;
+padding:80px 10%;
 }
 
 .section-title{
+font-size:40px;
 text-align:center;
-font-size:42px;
-margin-bottom:15px;
-}
-
-.section-sub{
-text-align:center;
-color:#bdbdbd;
-margin-bottom:60px;
+margin-bottom:40px;
+color:#D4AF37;
 }
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
 .card{
-background:#151515;
-padding:35px;
-border:1px solid #222;
-border-radius:12px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-border-color:#d4af37;
+background:#1a1a1a;
+padding:30px;
+border-radius:10px;
 }
 
 .card h3{
 margin-bottom:15px;
-color:#d4af37;
-}
-
-.about{
-background:#121212;
-}
-
-.about-text{
-max-width:950px;
-margin:auto;
-font-size:18px;
-text-align:center;
-}
-
-.industries{
-background:#0f0f0f;
-}
-
-.industry-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-}
-
-.industry{
-background:#181818;
-padding:30px;
-text-align:center;
-border-radius:10px;
-border:1px solid #222;
-}
-
-.industry h3{
-color:#d4af37;
-margin-bottom:15px;
+color:#D4AF37;
 }
 
 .contact{
 text-align:center;
-background:#111;
-}
-
-.contact-box{
-background:#181818;
-padding:40px;
-max-width:700px;
-margin:auto;
-border-radius:15px;
-border:1px solid #333;
-}
-
-.contact-box h2{
-margin-bottom:20px;
+background:#161616;
 }
 
 footer{
 text-align:center;
-padding:40px 20px;
-border-top:1px solid #222;
+padding:30px;
 background:black;
-}
-
-footer p{
-color:#999;
+border-top:1px solid #333;
 }
 
 @media(max-width:768px){
 
 .hero h1{
-font-size:40px;
+font-size:36px;
 }
 
 .hero h2{
@@ -257,18 +154,9 @@ flex-direction:column;
 gap:15px;
 }
 
-nav ul{
-flex-wrap:wrap;
-justify-content:center;
 }
-
-.section-title{
-font-size:32px;
-}
-
-}
-
 </style>
+
 </head>
 
 <body>
@@ -296,59 +184,37 @@ SOVEREIGN CAPITAL SUPPLY
 
 <div class="hero-content">
 
-<img src="Designer.png" class="hero-logo" alt="Sovereign Logo">
+<img src="Designer.png" alt="Sovereign Logo" class="hero-logo">
 
-<h1>
-<span class="gold">SOVEREIGN</span><br>
-CAPITAL SUPPLY
-</h1>
+<h1>SOVEREIGN CAPITAL SUPPLY</h1>
 
-<h2>
-Connecting People, Projects & Indigenous Participation Across Victoria
-</h2>
+<h2>Connecting People, Projects & Indigenous Participation Across Victoria</h2>
 
 <p>
 100% Indigenous Family-Owned Business Built and Operated in Australia.
-Supporting construction, civil and infrastructure projects through workforce coordination,
-contractor engagement, procurement support, logistics coordination and project support.
 </p>
 
-<div class="buttons">
+<br>
+
 #contactCONTACT US</a>
-#servicesOUR SERVICES</a>
-</div>
 
 </div>
 
 </section>
 
-<section id="about" class="about">
-
-<div class="container">
+<section id="about">
 
 <h2 class="section-title">Who We Are</h2>
 
-<p class="about-text">
-
-Sovereign Capital Supply is an Indigenous-owned Victorian business focused on supporting project delivery through workforce coordination, contractor engagement, project support and Indigenous participation outcomes.
-
-We work with contractors, project managers, councils, government agencies, suppliers and Indigenous organisations to help create successful project outcomes and long-term opportunities.
-
+<p style="max-width:900px;margin:auto;text-align:center;">
+Sovereign Capital Supply is an Indigenous-owned Victorian business focused on workforce coordination, contractor engagement, project support and Indigenous participation outcomes across construction, civil and infrastructure projects.
 </p>
-
-</div>
 
 </section>
 
 <section id="services">
 
-<div class="container">
-
 <h2 class="section-title">Our Services</h2>
-
-<p class="section-sub">
-Supporting construction, civil and infrastructure projects throughout Victoria.
-</p>
 
 <div class="cards">
 
@@ -359,22 +225,12 @@ Supporting construction, civil and infrastructure projects throughout Victoria.
 
 <div class="card">
 <h3>Contractor Engagement</h3>
-<p>Connecting projects with suitable contractors and industry capability.</p>
+<p>Connecting projects with suitable contractors and suppliers.</p>
 </div>
 
 <div class="card">
 <h3>Project Support</h3>
-<p>Providing practical project coordination and delivery support.</p>
-</div>
-
-<div class="card">
-<h3>Procurement Support</h3>
-<p>Supporting projects through supplier engagement and sourcing solutions.</p>
-</div>
-
-<div class="card">
-<h3>Logistics Coordination</h3>
-<p>Assisting projects with planning and resource coordination.</p>
+<p>Practical support solutions to help projects achieve successful outcomes.</p>
 </div>
 
 <div class="card">
@@ -384,38 +240,27 @@ Supporting construction, civil and infrastructure projects throughout Victoria.
 
 </div>
 
-</div>
-
 </section>
 
-<section id="industries" class="industries">
-
-<div class="container">
+<section id="industries">
 
 <h2 class="section-title">Industries We Support</h2>
 
-<div class="industry-grid">
+<div class="cards">
 
-<div class="industry">
+<div class="card">
 <h3>Construction</h3>
-<p>Commercial developments, schools, hospitals and buildings.</p>
+<p>Commercial buildings, schools and health facilities.</p>
 </div>
 
-<div class="industry">
+<div class="card">
 <h3>Civil</h3>
-<p>Subdivisions, fencing, site preparation and support works.</p>
+<p>Site preparation, subdivisions and support works.</p>
 </div>
 
-<div class="industry">
+<div class="card">
 <h3>Infrastructure</h3>
-<p>Roads, bridges and major infrastructure projects.</p>
-</div>
-
-<div class="industry">
-<h3>Government</h3>
-<p>Regional development and public infrastructure opportunities.</p>
-</div>
-
+<p>Roads, bridges and government projects.</p>
 </div>
 
 </div>
@@ -424,11 +269,7 @@ Supporting construction, civil and infrastructure projects throughout Victoria.
 
 <section id="contact" class="contact">
 
-<div class="container">
-
-<div class="contact-box">
-
-<h2>Contact Sovereign Capital Supply</h2>
+<h2 class="section-title">Contact Us</h2>
 
 <p>
 
@@ -437,15 +278,9 @@ Director<br><br>
 
 📞 0432 241 536<br><br>
 
-📧 sovereign.capital.supply@proton.me<br><br>
-
-Victoria Wide
+📧 sovereign.capital.supply@proton.me
 
 </p>
-
-</div>
-
-</div>
 
 </section>
 
