@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,19 +13,45 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 background:#111;
 color:white;
 line-height:1.7;
 }
 
+.nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,.85);
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+backdrop-filter:blur(10px);
+}
+
+.nav h1{
+color:#f4c542;
+font-size:1.3rem;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
 .hero{
 height:100vh;
-background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
-url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80');
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('Designer%20(6).png');
 background-size:cover;
 background-position:center;
 display:flex;
@@ -40,28 +65,41 @@ padding:20px;
 max-width:1000px;
 }
 
-.hero h1{
-font-size:4rem;
-color:#f4c542;
+.hero-logo{
+width:280px;
+max-width:90%;
 margin-bottom:20px;
 }
 
 .hero h2{
-font-size:1.4rem;
-margin-bottom:20px;
-color:#00b7ff;
+font-size:4rem;
+color:#f4c542;
+margin-bottom:15px;
 }
 
 .hero p{
-font-size:1.1rem;
+font-size:1.2rem;
+max-width:800px;
+margin:auto;
+}
+
+.button{
+display:inline-block;
+margin-top:30px;
+padding:15px 30px;
+background:#f4c542;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:50px;
 }
 
 section{
-padding:80px 10%;
+padding:90px 10%;
 }
 
 h3{
-font-size:2rem;
+font-size:2.2rem;
 margin-bottom:20px;
 color:#f4c542;
 }
@@ -74,9 +112,9 @@ margin-top:30px;
 }
 
 .card{
-background:#1c1c1c;
-padding:25px;
-border-radius:12px;
+background:#1a1a1a;
+padding:30px;
+border-radius:15px;
 border:1px solid #333;
 }
 
@@ -86,109 +124,118 @@ margin-bottom:10px;
 }
 
 .story{
-background:#181818;
+background:#161616;
+}
+
+.participation{
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('Designer.jpg');
+background-size:cover;
+background-position:center;
+}
+
+.vision{
+background:#101010;
+text-align:center;
 }
 
 .contact{
 text-align:center;
-background:black;
+background:#000;
 }
 
 .footer{
+background:black;
+padding:40px;
 text-align:center;
-padding:30px;
-background:#000;
 border-top:1px solid #333;
 }
 
-.highlight{
-color:#f4c542;
+.footer p{
+margin-top:10px;
 }
 
 @media(max-width:768px){
 
-.hero h1{
-font-size:2.5rem;
+.hero h2{
+font-size:2rem;
 }
 
-.hero h2{
+.hero p{
 font-size:1rem;
+}
+
+.nav{
+flex-direction:column;
+}
+
+.nav a{
+display:block;
+margin:8px 0;
 }
 
 }
 
 </style>
-
 </head>
+
 <body>
+
+<div class="nav">
+
+<h1>SOVEREIGN CAPITAL SUPPLY</h1>
+
+<div>
+#aboutAbout</a>
+#servicesServices</a>
+#participationParticipation</a>
+#contactContact</a>
+</div>
+
+</div>
 
 <div class="hero">
 
 <div class="hero-content">
 
-<h1>SOVEREIGN CAPITAL SUPPLY</h1>
+<img src="Designer.png" class="hero-logo">
 
-<h2>Connecting Projects, People and Indigenous Participation Across Victoria</h2>
+<h2>SOVEREIGN CAPITAL SUPPLY</h2>
 
 <p>
-100% Indigenous Family-Owned Business Built and Operated in Australia
+
+Connecting Projects, People and Indigenous Participation Across Victoria
+
 <br><br>
+
+100% Indigenous Family-Owned Business Built and Operated in Australia
+
+<br><br>
+
 Gunaikurnai Family Business Proudly Living and Operating on Yorta Yorta Country
+
 </p>
 
-</div>
+#contactContact Us</a>
 
 </div>
 
-<section>
+</div>
+
+<section id="about">
 
 <h3>Who We Are</h3>
 
 <p>
 
-Sovereign Capital Supply is an Indigenous family-owned business focused on workforce coordination, contractor engagement, project support and Indigenous participation throughout Victoria.
+Sovereign Capital Supply is a 100% Indigenous family-owned business focused on workforce coordination, contractor engagement, project support and Indigenous participation throughout Victoria.
 
-We work collaboratively with industry, government, contractors, suppliers and Indigenous organisations to support successful project delivery while creating meaningful community outcomes and long-term opportunities.
+Founded by James R.C. Mongta and Larry B. Mongta, Sovereign was built on the belief that meaningful opportunity, responsibility and community create lasting change.
+
+We work alongside contractors, industry, government, suppliers and Indigenous organisations to help deliver successful projects while supporting workforce participation, community outcomes and long-term growth.
 
 </p>
-
-</section>
-
-<section>
-
-<h3>What We Do</h3>
-
-<div class="cards">
-
-<div class="card">
-<h4>Workforce Coordination</h4>
-<p>
-Supporting workforce mobilisation and labour solutions for projects across Victoria.
-</p>
-</div>
-
-<div class="card">
-<h4>Contractor Engagement</h4>
-<p>
-Building partnerships between contractors, suppliers and project stakeholders.
-</p>
-</div>
-
-<div class="card">
-<h4>Project Support</h4>
-<p>
-Providing support services that help projects achieve successful outcomes.
-</p>
-</div>
-
-<div class="card">
-<h4>Indigenous Participation</h4>
-<p>
-Creating pathways for Indigenous business engagement, workforce participation and community outcomes.
-</p>
-</div>
-
-</div>
 
 </section>
 
@@ -198,64 +245,115 @@ Creating pathways for Indigenous business engagement, workforce participation an
 
 <p>
 
-Sovereign Capital Supply was founded by James R.C. Mongta and Larry B. Mongta with a vision of creating opportunity for future generations.
+Sovereign Capital Supply was established to create opportunities for family, community and future generations.
 
-Built on Gunaikurnai heritage and operating on Yorta Yorta Country, Sovereign was established to support projects, workforce participation and Indigenous engagement across Victoria.
+Built on Gunaikurnai heritage and proudly operating on Yorta Yorta Country, the business reflects a commitment to resilience, accountability, leadership and positive change.
 
-Through resilience, lived experience and a commitment to positive change, Sovereign represents a journey toward building a stronger future for family, children, community and future generations.
+Our goal is to build sustainable pathways into workforce participation, project delivery, Indigenous engagement and regional development across Victoria.
 
-Our mission is to create sustainable opportunities, strengthen Indigenous participation and contribute to successful project delivery across Victoria.
+We believe successful projects create lasting value when participation, community outcomes and project delivery work together.
 
 </p>
 
 </section>
 
-<section>
+<section id="services">
 
-<h3>Why Sovereign</h3>
+<h3>Our Services</h3>
 
 <div class="cards">
 
 <div class="card">
-<h4>Indigenous Owned</h4>
-<p>100% Indigenous Family-Owned Business.</p>
+<h4>Workforce Coordination</h4>
+<p>Supporting workforce mobilisation and labour solutions across Victoria.</p>
 </div>
 
 <div class="card">
-<h4>Relationship Driven</h4>
-<p>Building trusted partnerships across industry and community.</p>
+<h4>Contractor Engagement</h4>
+<p>Connecting suppliers, contractors and project stakeholders.</p>
 </div>
 
 <div class="card">
-<h4>Community Focused</h4>
-<p>Focused on participation, opportunity and positive outcomes.</p>
+<h4>Project Support</h4>
+<p>Supporting construction, infrastructure and community projects.</p>
 </div>
 
 <div class="card">
-<h4>Victoria Wide</h4>
-<p>Supporting projects throughout regional and metropolitan Victoria.</p>
+<h4>Indigenous Participation</h4>
+<p>Creating opportunities for participation, engagement and local outcomes.</p>
+</div>
+
+<div class="card">
+<h4>Procurement Support</h4>
+<p>Helping projects connect with capability, resources and local suppliers.</p>
+</div>
+
+<div class="card">
+<h4>Community Outcomes</h4>
+<p>Supporting sustainable benefits for people, communities and future generations.</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="contact">
+<section id="participation" class="participation">
+
+<h3>Indigenous Participation</h3>
+
+<p>
+
+Sovereign Capital Supply is committed to contributing meaningful Indigenous participation outcomes through workforce opportunities, partnerships, business engagement and community-focused project delivery.
+
+We work with government, councils, contractors and Indigenous organisations to support positive and sustainable outcomes across regional and metropolitan Victoria.
+
+</p>
+
+</section>
+
+<section class="vision">
+
+<h3>Our Vision</h3>
+
+<p>
+
+To create sustainable opportunities through Indigenous participation, workforce development, project support and strong partnerships across Victoria.
+
+Building Opportunity. Supporting Projects. Creating Legacy.
+
+</p>
+
+</section>
+
+<section id="contact" class="contact">
 
 <h3>Contact Us</h3>
 
 <p>
 
-<strong>James R.C. Mongta</strong><br>
+<strong>James R.C. Mongta</strong>
 
-Director<br><br>
+<br><br>
 
-📞 0432 241 536<br>
+Director
 
-📧 sovereign.capital.supply@proton.me<br><br>
+<br><br>
 
-Echuca VIC 3564<br>
-Victoria, Australia<br><br>
+📞 0432 241 536
+
+<br><br>
+
+📧 sovereign.capital.supply@proton.me
+
+<br><br>
+
+📍 Echuca VIC 3564
+
+<br>
+
+Victoria, Australia
+
+<br><br>
 
 Victoria Wide
 
@@ -265,11 +363,19 @@ Victoria Wide
 
 <div class="footer">
 
-© Sovereign Capital Supply
+<h3>SOVEREIGN CAPITAL SUPPLY</h3>
 
-<br><br>
+<p>
 
-Building Opportunity. Supporting Projects. Creating Legacy.
+Connecting Projects, People and Indigenous Participation Across Victoria
+
+</p>
+
+<p>
+
+100% Indigenous Family-Owned Business Built and Operated in Australia
+
+</p>
 
 </div>
 
